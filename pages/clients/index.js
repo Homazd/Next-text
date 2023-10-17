@@ -1,9 +1,19 @@
-function ClientsPage(){
-    return (
-        <div>
-            <h1>The Clients Page</h1>
-        </div>
-    )
+import Link from "next/link";
+
+function ClientsPage() {
+  return (
+    <div>
+      <h1>The Clients Page</h1>
+      <ul>
+        <li>
+          <Link href="/clients/homa">Homa</Link>
+        </li>
+        <li>
+          <Link href="/clients/manu">Manual</Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 export default ClientsPage;
